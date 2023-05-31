@@ -1,41 +1,43 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <title>My Portfolio</title>
     <style>
         /* Add your CSS styling here */
-        #nav-menu ul{
+        #nav-menu ul {
             display: flex;
             justify-content: space-evenly;
             text-decoration: none;
         }
-        a{
+
+        a {
             text-decoration: none;
         }
     </style>
 </head>
+
 <body>
     <!-- Navbar -->
     <nav id="nav-menu">
         <ul>
-            <li><a href="#home">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#contact">Contact</a></li>
+            <li><a href="#home" class="nav-link home">Home</a></li>
+            <li><a href="#about" class="nav-link about">About</a></li>
+            <li><a href="#skills" class="nav-link skills">Skills</a></li>
+            <li><a href="#projects" class="nav-link projects">Projects</a></li>
+            <li><a href="#contact" class="nav-link contact">Contact</a></li>
+            <li><a href="path/to/resume.pdf" class="nav-link resume">Resume</a></li>
         </ul>
     </nav>
 
     <!-- Home section -->
     <section id="home">
         <!-- Home content goes here -->
-        
     </section>
 
     <!-- About section -->
     <section id="about" class="about section">
         <!-- About content goes here -->
-        
     </section>
 
     <!-- Skills section -->
@@ -53,12 +55,13 @@
         <!-- Contact content goes here -->
     </section>
 
+    <!-- Add your JavaScript code here -->
     <script>
         // Add event listeners to the navbar links
         var navbarLinks = document.querySelectorAll("#nav-menu a");
 
-        navbarLinks.forEach(function(link) {
-            link.addEventListener("click", function(event) {
+        navbarLinks.forEach(function (link) {
+            link.addEventListener("click", function (event) {
                 event.preventDefault(); // Prevent default link behavior
 
                 var targetSectionId = link.getAttribute("href").substring(1);
@@ -71,4 +74,5 @@
         });
     </script>
 </body>
+
 </html>
