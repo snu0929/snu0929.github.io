@@ -1,43 +1,63 @@
 <!DOCTYPE html>
 <html>
-
 <head>
     <title>My Portfolio</title>
-    <style>
-        /* Add your CSS styling here */
-        #nav-menu ul {
-            display: flex;
-            justify-content: space-evenly;
-            text-decoration: none;
-        }
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 
-        a {
-            text-decoration: none;
-        }
-    </style>
+    <link rel="stylesheet" href="./style.css"/>
 </head>
-
 <body>
     <!-- Navbar -->
-    <nav id="nav-menu">
-        <ul>
-            <li><a href="#home" class="nav-link home">Home</a></li>
-            <li><a href="#about" class="nav-link about">About</a></li>
-            <li><a href="#skills" class="nav-link skills">Skills</a></li>
-            <li><a href="#projects" class="nav-link projects">Projects</a></li>
-            <li><a href="#contact" class="nav-link contact">Contact</a></li>
-            <li><a href="path/to/resume.pdf" class="nav-link resume">Resume</a></li>
-        </ul>
-    </nav>
-
+    <header class="header">
+        <a href="#" class="logo">Sonu</a>
+        <i class='bx bx-menu' id=menu-icon></i>
+        <nav class="navbar nav-menu">
+            <a href="#home" class="nav-link home active">Home</a>
+            <a href="#about" class="nav-link about">About</a>
+            <a href="#skills" class="nav-link skills">Skills</a>
+            <a href="#projects" class="nav-link projects">Projects</a>
+            <a href="#contact" class="nav-link contact">Contact</a>
+            <a href="path/to/resume.pdf" class="nav-link resume" id="resume-link-1">Resume</a>
+        </nav>
+    </header>
+    
     <!-- Home section -->
-    <section id="home">
-        <!-- Home content goes here -->
+    <section id="home" class="home">
+        <div class="home-content">
+            <h3>Hello,its Me</h3>
+            <h1 id="user-detail-name">Sonu Kumar</h1>
+            <h3>And I'm a <span>Full Stack Web developer</span></h3>
+            <p>As a full stack web developer, I specialize in designing and implementing end-to-end solutions, combining my skills in HTML, CSS, JavaScript, MERN, and server-side technologies to 
+                create robust and efficient web applications..</p>
+                 <div class="social-media">
+                    <a href="#"><i class='bx bxl-github'></i></a>
+                    <a href="#"><i class='bx bxl-linkedin'></i></a>
+                </div>
+                <a href="#" class="btn" id="resume-link-2">Download Resume</a>
+        </div>
+        <div class="home-img" >
+            <img  class="home-img" src="pictures/my-passport-photo.jpg" alt="photo">
+        </div>
     </section>
 
-    <!-- About section -->
+  <!-- About section -->
     <section id="about" class="about section">
         <!-- About content goes here -->
+        <div class="about-img">
+            <img src="pictures/my-passport-photo.jpg"/>
+        </div>
+        <div class="about-content">
+            <h2 class="heading">About <span>Me</span></h2>
+            <h3>Full Stack Web Developer</h3>
+            <P  id="user-detail-intro">Hello! I'm Sonu, a passionate and 
+                dedicated full stack web developer with a strong background in creating innovative
+                 and efficient digital solutions. With 1 years of experience in the field, I am adept at developing 
+                 robust and scalable web applications from concept to completion.
+                 As a full stack web developer, I possess a comprehensive understanding of both front-end and back-end technologies. On the front-end, 
+                 I am skilled in HTML, CSS, and JavaScript, enabling me to craft visually appealing and user-friendly interfaces
+                </P>
+      <a href="#" class="btn">Read More</a>  
+                </div>
     </section>
 
     <!-- Skills section -->
@@ -55,24 +75,8 @@
         <!-- Contact content goes here -->
     </section>
 
-    <!-- Add your JavaScript code here -->
     <script>
-        // Add event listeners to the navbar links
-        var navbarLinks = document.querySelectorAll("#nav-menu a");
-
-        navbarLinks.forEach(function (link) {
-            link.addEventListener("click", function (event) {
-                event.preventDefault(); // Prevent default link behavior
-
-                var targetSectionId = link.getAttribute("href").substring(1);
-                var targetSection = document.getElementById(targetSectionId);
-
-                if (targetSection) {
-                    targetSection.scrollIntoView({ behavior: "smooth" });
-                }
-            });
-        });
+ 
     </script>
 </body>
-
 </html>
