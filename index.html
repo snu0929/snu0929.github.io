@@ -19,6 +19,9 @@
             <a href="#contact" class="nav-link contact">Contact</a>
             <a href="path/to/resume.pdf" class="nav-link resume" id="resume-link-1">Resume</a>
         </nav>
+        <div class="toggle">
+            <i class='bx bx-moon toggle-icon'></i>
+        </div>
     </header>
     
     <!-- Home section -->
@@ -30,13 +33,13 @@
             <p>As a full stack web developer, I specialize in designing and implementing end-to-end solutions, combining my skills in HTML, CSS, JavaScript, MERN, and server-side technologies to 
                 create robust and efficient web applications..</p>
                  <div class="social-media">
-                    <a href="#"><i class='bx bxl-github'></i></a>
-                    <a href="#"><i class='bx bxl-linkedin'></i></a>
+                    <a href="https://github.com/"><i class='bx bxl-github'></i></a>
+                    <a href="https://www.linkedin.com/feed/"><i class='bx bxl-linkedin'></i></a>
                 </div>
                 <a href="#" class="btn" id="resume-link-2">Download Resume</a>
         </div>
         <div class="home-img" >
-            <img  class="home-img" src="pictures/my-passport-photo.jpg" alt="photo">
+            <img  src="pictures/developer png.png" alt="photo">
         </div>
     </section>
 
@@ -44,7 +47,7 @@
     <section id="about" class="about section">
         <!-- About content goes here -->
         <div class="about-img">
-            <img src="pictures/my-passport-photo.jpg"/>
+            <img class="home-img"src="pictures/my-passport-photo.jpg"/>
         </div>
         <div class="about-content">
             <h2 class="heading">About <span>Me</span></h2>
@@ -61,9 +64,82 @@
     </section>
 
     <!-- Skills section -->
-    <section id="skills">
-        <!-- Skills content goes here -->
-        skills
+    <section id="skills" class="skills">
+        <h2 class="heading">My <span>Skills</span></h2>
+
+        <div class="skills-container">
+            <div class="skills-box">
+                <i class="skills-card-img"class='bx bxl-html5'></i>
+                <h3 class="skills-card-name">HTML</h3>
+                <p>HTML (Hypertext Markup Language) is the standard markup language for creating and structuring web pages</p>
+            </div>
+      
+        
+            <div class="skills-box">
+                <i class="skills-card-img" class='bx bxl-css3'></i>
+                <h3 class="skills-card-name">CSS</h3>
+                <p>CSS is a styling language for web development that enhances the visual appearance and layout of HTML documents</p>
+            </div>
+        
+        
+            <div class="skills-box">
+                <i class="skills-card-img" class='bx bxl-javascript'></i>
+                <h3 class="skills-card-name">Javascript</h3>
+                <p>JavaScript is a versatile programming language that adds interactivity and dynamic functionality to web pages</p>
+            </div>
+        
+        
+            <div class="skills-box">
+                <i class="skills-card-img" class='bx bxl-react'></i>
+                <h3 class="skills-card-name">React</h3>
+                <p>React is a JavaScript library for building responsive and interactive user interfaces.</p>
+            </div>
+        
+       
+            <div class="skills-box">
+                <i class="skills-card-img" class='bx bxl-redux'></i>
+                <h3 class="skills-card-name">Redux</h3>
+                <p>Redux is a predictable state container for JavaScript applications, allowing for centralized and efficient management of application state, making it easier to develop and maintain complex UIs</p>
+            </div>
+        
+        
+            <div class="skills-box">
+                <i class="skills-card-img"class='bx bxl-html5'></i>
+                <h3 class="skills-card-name">Chakra UI</h3>
+                <p>Chakra UI is a versatile component library for React, offering a wide range of pre-built UI components and styling options to streamline the development of attractive and responsive user interfaces</p>
+            </div>
+       
+        
+            <div class="skills-box">
+                <i class="skills-card-img" class='bx bxl-typescript'></i>
+                <h3 class="skills-card-name">TypeScript</h3>
+                <p>TypeScript is a statically-typed superset of JavaScript that enhances code quality and tooling support for building robust and scalable applications</p>
+            </div>
+        
+       
+            <div class="skills-box">
+                <i class="skills-card-img" class='bx bxl-nodejs'></i>
+                <h3 class="skills-card-name">Nodejs</h3>
+                <p>
+                    Node.js is a JavaScript runtime environment for server-side and command-line application development.</p>
+            </div>
+        
+        
+            <div class="skills-box">
+                <i class="skills-card-img" class='bx bxl-html5'></i>
+                <h3 class="skills-card-name">expressjs</h3>
+                <p>Express.js is a minimalist and flexible web application framework for Node.js, providing a simple and intuitive way to build robust and scalable web APIs and server-side applications</p>
+            </div>
+        
+        
+            <div class="skills-box">
+                <i class="skills-card-img" class='bx bxl-mongodb'></i>
+                <h3 class="skills-card-name">Mongodb</h3>
+                <p>MongoDB is a popular and flexible NoSQL database management system that stores data in a document-oriented format, offering high scalability, performance, and easy integration with modern web applications</p>
+            </div>
+        
+    </div>
+        
     </section>
 
     <!-- Projects section -->
@@ -79,7 +155,11 @@
     </section>
 
     <script>
- 
+      const toggleIcon=document.querySelector(".toggle-icon");
+      toggleIcon.addEventListener("click",()=>{
+        toggleIcon.classList.toggle("bx-sun")
+        document.body.classList.toggle("dark-mode")
+      })
     </script>
 </body>
 </html>
