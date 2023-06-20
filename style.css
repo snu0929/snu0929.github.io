@@ -221,21 +221,21 @@ margin: 1rem 0 3rem;
     align-items: center;
     gap:2.5rem
 }
-.project-container .project-box{
+.project-container .project-card{
     position: relative;
     border-radius: 2rem;
     box-shadow: 0 0 1rem var(--bg-color);
     overflow: hidden;
     display: flex;
 }
-.project-box img{
+.project-card img{
     width: 100%;
     transition: .5s ease;
 }
-.project-box img:hover{
+.project-card img:hover{
     transform: scale(1.1);
 }
-.project-box .project-layer{
+.project-card .project-layer{
   position: absolute;
   bottom: 0;
   left:0;
@@ -251,7 +251,7 @@ margin: 1rem 0 3rem;
   transform: translateY(100%);
   transition: .5s ease;
 }
-.project-box:hover .project-layer{
+.project-card:hover .project-layer{
     transform: translateY(0);
 }
 .project-layer h4{
@@ -275,3 +275,24 @@ margin: 1rem 0 3rem;
     color:var(--second-bg-color)
     
 }
+
+/* github css */
+.react-activity-calendar {
+    text-align: center;                                                
+}
+.stats{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  #github-stats {
+    margin: 70px;
+  }
+  #resume-button-2 {
+    list-style: none;
+  }
+  
+  #github-stats {
+    align-items: center;
+    justify-content: center;
+  }
