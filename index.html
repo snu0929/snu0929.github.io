@@ -23,9 +23,9 @@
             <a href="Sonu-Kumar-Resume.pdf" class="nav-link resume" id="resume-button-1" target="_blank"
                 download>Resume</a>
         </nav>
-        <div class="toggle">
+        <!-- <div class="toggle">
             <i class="bx bx-moon toggle-icon"></i>
-        </div>
+        </div> -->
     </header>
 
     <!-- Home section -->
@@ -33,7 +33,7 @@
         <div class="home-content">
             <h3>Hello,its Me</h3>
             <h1 id="user-detail-name">Sonu Kumar</h1>
-            <h3>And I'm a <span>Full Stack Web developer</span></h3>
+            <h3>And I'm a <span class="multiple-text"></span></h3>
             <p>
                 As a full stack web developer, I specialize in designing and
                 implementing end-to-end solutions, combining my skills in HTML, CSS,
@@ -78,7 +78,7 @@
     <section id="skills" class="skills">
         <h2 class="heading">My <span>Skills</span></h2>
 
-        <div class="skills-container">
+        <div  class="skills-container">
             <div class="skills-card">
                 <i class="bx bxl-html5 skills-card-img"></i>
                 <h3 class="skills-card-name">HTML</h3>
@@ -135,9 +135,48 @@
             </div>
         </div>
     </section>
+    
+     <!-- tools-section -->
+     <section id="tools">
+        <h2 class="heading"><span>Tools</span></h2>
+        <div class="tools-container">
+            <div class="tools-card">
+                <img width="30%"  src="./pictures/visual-studio-code.png"/>
+                <h3>VS Code</h3>
+            </div>
+            <div class="tools-card">
+                <img width="30%"  src="./pictures/github.png"/>
+                <h3>Github</h3>
+            </div>
+            <div class="tools-card">
+                <img width="30%" src="./pictures/git-bash.svg"/>
+                <h3>Git Bash</h3>
+            </div>
+            <div class="tools-card">
+                <img width="30%" src="./pictures/git.png"/>
+                <h3>Git</h3>
+            </div>
+            <div class="tools-card">
+                <img width="30%" src="./pictures/replit-icon-seeklogo.com.svg"/>
+                <h3>Replit</h3>
+            </div>
+            <div class="tools-card">
+                <img width="30%" src="./pictures/codepen.png">
+                <h3>Codpen</h3>
+            </div>
+            <div class="tools-card">
+                <img width="30%" src="./pictures/code-sandbox.png"/>
+                <h3>Codsandbox</h3>
+            </div>
+            <div class="tools-card">
+                <img width="30%" src="./pictures/postman.png"/>
+                <h3>Postman</h3>
+            </div>
+        </div>
+     </section>
 
     <!-- Projects section -->
-    <section id="projects">
+    <section id="projects" >
         <!-- Projects content goes here -->
         <h2 class="heading"><span>Projects</span></h2>
         <div class="project-container">
@@ -248,9 +287,10 @@
             </div>
         </div>
     </section>
+    
 
     <!-- statics-section -->
-    <div class="container" id="statics">
+    <section class="container" id="statics">
         <h2 class="heading">Statics</h2>
         <div>
             <div class="react-activity-calendar calendar">
@@ -276,8 +316,10 @@
             </div>
             </a>
         </div>
-    </div>
-    </div>
+    </section>
+
+    
+   
     <!-- Contact section -->
     <section id="contact" class="contact">
         <!-- Contact content goes here -->
@@ -325,20 +367,10 @@
         <a href="#"><i class='bx bx-up-arrow-alt'></i></a>
      </div>
    </footer>
-    <script>
-         let resume1 = document.getElementById("resume-button-1").addEventListener("click", NewTab)
-    let resume2 = document.getElementById("resume-button-2").addEventListener("click", NewTab)
-    function NewTab() {
-      window.open(
-        "https://drive.google.com/file/d/1LOa9Y2gsUtbQ3RJFYqwVe_bS-GlLHeUU/view?usp=sharing",
-        "_blank"
-      );
-    }
-        const toggleIcon = document.querySelector(".toggle-icon");
-        toggleIcon.addEventListener("click", () => {
-            toggleIcon.classList.toggle("bx-sun");
-            document.body.classList.toggle("dark-mode");
-        });
+   <script src="https://unpkg.com/scrollreveal"></script>
+
+   <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script src="./index.js">
 
     </script>
 </body>
