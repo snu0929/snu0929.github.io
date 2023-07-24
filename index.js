@@ -85,11 +85,7 @@ ScrollReveal().reveal(".home-content p, .about-content", {
 // ============typed js===============
 
 const typed = new Typed(".multiple-text", {
-  strings: [
-    "Fronted Developer",
-    "Full Stack Developer",
-    "MERN stack Developer",
-  ],
+  strings: ["Full Stack Developer", "MERN stack Developer"],
   typeSpeed: 100,
   backSpeed: 100,
   backDelay: 100,
