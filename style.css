@@ -257,6 +257,7 @@ span {
     margin: 1rem 0 3rem;
 }
 
+/* Projects section */
 #projects {
     background: var(--second-bg-color);
 }
@@ -269,7 +270,7 @@ span {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     align-items: center;
-    gap: 2.5rem
+    gap: 2.5rem;
 }
 
 .project-container .project-card {
@@ -278,6 +279,8 @@ span {
     box-shadow: 0 0 1rem var(--bg-color);
     overflow: hidden;
     display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .project-card img {
@@ -289,37 +292,44 @@ span {
     transform: scale(1.1);
 }
 
-.project-card .project-layer {
-    position: absolute;
-    bottom: 0;
-    left: 0;
+.project-card .project-details {
+    background: linear-gradient(rgba(0, 0, 0, 2), var(--main-color));
     width: 100%;
-    height: 100%;
-    background: linear-gradient(rgba(0, 0, 0, .4), var(--main-color));
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+    padding: 2rem;
     text-align: center;
-    padding: 0 4rem;
-    transform: translateY(100%);
-    transition: .5s ease;
+}
+.project-card .project-details h4.project-title {
+    font-size: 2rem; /* Increased font size */
+    margin: 1rem 0; /* Adjusted margin */
+    color: var(--main-color); /* Changed text color to a main color */
 }
 
-.project-card:hover .project-layer {
-    transform: translateY(0);
+.project-card .project-details h4 {
+    font-size: 2rem;
+    margin: 1rem 0;
 }
 
-.project-layer h4 {
-    font-size: 3rem;
+.project-card .project-details p {
+    font-size: 1.2rem;
+    margin: 1rem 0;
+    font-family: 'Roboto', sans-serif;
 }
 
-.project-layer p {
-    font-size: 1.6rem;
-    margin: 3rem 0 1rem;
+/* Updated Project description */
+.project-card .project-details p.project-description {
+    font-size: 1.8rem; /* Increased font size */
+    margin: 1.5rem 0; /* Adjusted margin */
+    color: var(--text-color); /* Changed text color to a text color */
+    line-height: 1.3; /* Adjusted line height for better readability */
 }
-
-.project-layer a {
+.project-card .project-details h4.project-tech-stack {
+    font-size: 1.7rem; /* Increased font size */
+    margin: 1rem 0; /* Adjusted margin */
+    color: var(--accent-color); /* Changed text color to an accent color */
+}
+/* Updated Project links with hover effect */
+.project-card .project-details a {
+    margin-top: 1rem;
     display: inline-flex;
     justify-content: center;
     align-items: center;
@@ -327,12 +337,23 @@ span {
     height: 5rem;
     background: var(--text-color);
     border-radius: 50%;
+    color: var(--second-bg-color); /* Initial color */
+    font-size: 1.9rem; /* Initial font size */
+    transition: color 0.3s ease-in-out, font-size 0.3s ease-in-out; /* Transition for color and size change */
 }
 
-.project-layer a i {
-    font-size: 2rem;
-    color: var(--second-bg-color)
+.project-card .project-details a:hover {
+    color: var(--main-color); /* Color on hover */
+    font-size: 3rem; /* Increased font size on hover */
 }
+
+
+
+/* 
+.project-card .project-details a i {
+    font-size: 2rem;
+    color: var(--second-bg-color);
+} */
 
 /* github css */
 .react-activity-calendar {
@@ -351,6 +372,7 @@ span {
 
 #resume-button-2 {
     list-style: none;
+    
 }
 
 #github-stats {
@@ -434,6 +456,12 @@ span {
     color: var(--second-bg-color);
     box-shadow: 0 0 1rem var(--main-color);
 
+}
+
+/* contacts */
+
+.contact_me{
+    text-align: center;
 }
 
 .contact_me p,
