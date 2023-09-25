@@ -23,6 +23,7 @@ let navbar = document.querySelector(".navbar");
 menuIcon.onclick = () => {
   menuIcon.classList.toggle("bx-x");
   navbar.classList.toggle("active");
+  // document.body.classList.toggle("no-scroll"); // Add a class to disable scrolling when the menu is active
 };
 
 //  ====== scroll sections active links ======
@@ -47,11 +48,22 @@ window.onscroll = () => {
     }
   });
 };
+navLinks.forEach(link => {
+  link.addEventListener('click', () => {
+    menuIcon.classList.remove("bx-x");
+    navbar.classList.remove("active");
+    document.body.classList.remove("no-scroll"); // Remove the class to enable scrolling
+  });
+});
 
 //  ====== sticky Navbar ======
 
-let header = document.querySelector("header");
-header.classList.toggle("sticky", window.scrollY > 100);
+// let header = document.querySelector("header");
+// header.classList.toggle("sticky", window.scrollY > 100);
+window.addEventListener('scroll', () => {
+  header.classList.toggle('sticky', window.scrollY > 100);
+});
+
 
 //  ====== remove toggle icon and navbaer when click navbar links ======
 
