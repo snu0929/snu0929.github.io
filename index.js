@@ -58,11 +58,11 @@ navLinks.forEach(link => {
 
 //  ====== sticky Navbar ======
 
-// let header = document.querySelector("header");
-// header.classList.toggle("sticky", window.scrollY > 100);
-window.addEventListener('scroll', () => {
-  header.classList.toggle('sticky', window.scrollY > 100);
-});
+let header = document.querySelector("header");
+header.classList.toggle("sticky", window.scrollY > 100);
+// window.addEventListener('scroll', () => {
+//   header.classList.toggle('sticky', window.scrollY > 100);
+// });
 
 
 //  ====== remove toggle icon and navbaer when click navbar links ======
