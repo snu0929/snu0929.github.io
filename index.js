@@ -6,7 +6,7 @@ let resume2 = document
   .addEventListener("click", NewTab);
 function NewTab() {
   window.open(
-    "https://drive.google.com/file/d/1LOa9Y2gsUtbQ3RJFYqwVe_bS-GlLHeUU/view?usp=sharing",
+    "https://drive.google.com/file/d/1RQc9P-09_ecoXZl0OID9lCPsUNW6cRy0/view?usp=sharing",
     "_blank"
   );
 }
